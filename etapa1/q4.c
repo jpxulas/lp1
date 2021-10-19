@@ -22,7 +22,7 @@ struct produto
 struct produto item[20];
 
 
-void cadastro(struct produto item[0]){
+void cadastro(struct produto item[cont]){
     do
     {
         printf("Adicionar produto?\n");

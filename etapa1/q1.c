@@ -2,7 +2,6 @@
 //com pesos = 5 para numeros acima de 6 e peso = 2,5 para numeros abaixo ou igual a 6.
 
 #include <stdio.h>
-#include <iostream>
 #include <stdlib.h>
 
 int a, b, c;

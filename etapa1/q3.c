@@ -5,31 +5,27 @@
 //Dado um inteiro positivo n, verificar se n é perfeito.
 
 #include <stdio.h>
-#include <iostream>
-#include <stdlib.h>
 
-int num, n;
+int num,acm=0,div;
 
-int main(){
-    scanf("%d",&num);
+int main()
+{
+	
 
-    for (int i=1; i <= num/2; i++)
-    {
-        if (num%2==0)
-        {
-            n+=1;
-        }
-        
-    }
-    if (n==num)
-    {
-        printf("n eh perfeito");
-    }
-    else{
-        printf("n neh perfeito");
-    }
-    
-    
-
-
+  printf("Insira um numero inteiro positivo: ");
+  scanf("%d", &num);
+  
+  for (div = 1; div < num; div++)
+  {
+    if (num % div == 0)
+      acm = acm + div;
+  }
+  
+  if (num == acm)
+  {
+    printf("O numero %d e perfeito\n", num);
+  }
+  else 
+    printf("O numero %d nao e perfeito\n", num);
+  
 }

@@ -1,7 +1,6 @@
 //Faça um programa que calcule o fatorial de um numero informado pelo usuario. Obs: O fatorial de 0 é 1.
 
 #include <stdio.h>
-#include <iostream>
 #include <stdlib.h>
 
 int cont, aux, fat;
@@ -15,9 +14,8 @@ int main(){
      
       fat=fat*cont;
       cont--;
-
-      
-      
+   
+    
         
     }
     printf("%d---",fat);
